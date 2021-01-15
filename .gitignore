@@ -1,0 +1,12 @@
+MailChimp API Key:  99ce1a9a232ba01e4f4f3be1ada50d2f-us7
+MailChimp unique list id: 5e51e8eb43
+
+The way the home page originally was.
+
+
+<% posts.forEach(function(post) { %>
+  <h1> <%= post.title %> </h1>
+  <p><%=post.content.substr(0, 100) + " ..."%>
+  <a class="btn-sm btn btn-success" href="/post/ <%= post.title %>">Read more</a>
+</p>
+<% }) %>

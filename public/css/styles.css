@@ -1,0 +1,186 @@
+h1 {
+  color: #556052;
+}
+p {
+  color: #556052;
+  text-align: justify;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+#title-font {
+  color: #5AA469;
+}
+
+h3 {
+  text-align: left;
+}
+/* ?????????????????????????????????? */
+.btn:hover {
+  stroke-dashoffset: -480;
+}
+
+.aboutHR {
+  border-left: 0;
+  height: 4px;
+  border: 0;
+  box-shadow: inset 0 12px 12px -12px;
+  color: #5AA469;
+}
+
+.btn:hover {
+  transition: 1s ease-in-out;
+  background: #81B214;
+}
+
+.styleHR {
+  border-left: 0;
+  height: 4px;
+  border: 0;
+  box-shadow: inset 0 12px 12px -12px;
+  color: #5AA469;
+  margin-right: 15%;
+}
+
+.divTealBackground {
+ width: 100vw;
+ position: relative;
+ margin-left: -50vw;
+ margin-top: 10px;
+ margin-bottom: 250px;
+ left: 50%;
+ background-color: #E8EAE6;
+ padding-top: 20px;
+}
+
+.posts {
+  margin-left: 115px;
+  padding-bottom: 20px;
+}
+
+.post {
+  color: #556052;
+}
+.title {
+  color: #556052;
+}
+.textarea1 {
+  border-style: none;
+  border-width: 0;
+}
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+.navbar-nav  li a:hover {
+    color: #5AA469 !important;
+}
+
+.aboutPic {
+  padding-bottom: 20px;
+  width: 300px;
+}
+
+.footer-padding {
+	padding-bottom: 0;
+  display: inline-block;
+}
+
+.homeParagraph2 {
+  margin-left: 0;
+  margin-bottom: 405px;
+}
+
+.homeParagraph3 {
+  margin-bottom: 115px;
+}
+
+#email {
+  width: 375px;
+  text-align: center;
+  margin: auto;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+#fName {
+  width: 375px;
+  text-align: center;
+  margin: auto;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+#lName {
+  width: 375px;
+  text-align: center;
+  margin: auto;
+  border-radius: 0;
+}
+
+.divForSuccess {
+  margin-bottom: 405px;
+}
+
+.divForFailure {
+  margin-bottom: 380px;
+}
+
+.newsletterImage {
+  margin-top: 15px;
+}
+
+.emailInput {
+  margin-bottom: 15px;
+}
+
+#inputPassword {
+  width: 375px;
+  text-align: center;
+  margin: auto;
+}
+
+.buttonSignup {
+  margin-bottom: 240px;
+}
+
+.homeParagraph {
+  margin-bottom: 50px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.homeImage {
+  width: 25%;
+}
+
+
+
+.footer {
+  padding-top: 5px;
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	background-color: #F6C523;
+}
+
+.footer p {
+	margin-top: 0;
+	font-size: 12px;
+  color: #fff;
+  text-align: center;
+}
+
+.button {
+  margin-top: 15px;
+}
