@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
@@ -34,11 +35,18 @@ const postSchema = {
   content: String
 };
 
-const subscriberSchema = {
+const subscriberSchema = new.mongoose.Schema({
   firstName: String,
   lastName: String,
   email: String
-};
+});
+
+// const keySchema = new.mongoose.Schema({
+//   key: String
+// });
+//
+subscriberSchema.plugin(encrypt, { secret: secret, encryptionFields: ["lastName"] });
+
 
 const Post = mongoose.model("Post", postSchema);
 
@@ -52,7 +60,7 @@ let subscribers = [];
 let subscriber = [];
 
 
-
+// process.env.API_KEY
 
 app.get("/", function(req, res) {
 
@@ -150,7 +158,7 @@ subscriber.save(function(err) {
   const url = "https://us7.api.mailchimp.com/3.0/lists/5e51e8eb43";
   const options = {
     method: "POST",
-    auth: "matthewadamson34:99ce1a9a232ba01e4f4f3be1ada50d2f-us7"
+    auth: "process.env.API_KEY"
   }
 
   const request = https.request(url, options, function(response) {
