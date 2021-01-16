@@ -35,17 +35,17 @@ const postSchema = {
   content: String
 };
 
-const subscriberSchema = new.mongoose.Schema({
+const subscriberSchema = {
   firstName: String,
   lastName: String,
   email: String
-});
+};
 
 // const keySchema = new.mongoose.Schema({
 //   key: String
 // });
 //
-subscriberSchema.plugin(encrypt, { secret: secret, encryptionFields: ["lastName"] });
+
 
 
 const Post = mongoose.model("Post", postSchema);
@@ -292,6 +292,6 @@ app.get("/post/:postId", function(req, res){
 
 
 
-app.listen(3001, function() {
-  console.log("Server started on port 3001");
+app.listen(process.env.PORT || 3000, function() {
+  console.log("Server started on Heroku port");
 });
