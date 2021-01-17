@@ -16,15 +16,17 @@
 
 
 
+  for (var i = 0; i < posts.length; i++) {
+    <hr class="styleHR">
+    <h1> <%= post.title(i) %> </h1>
+      <p> <%= post.content(i) %> </p>
+  <% }) %>
+  </div>
+  </div>
 
-  <% posts.forEach(function(post) { %>
-<hr class="styleHR">
-  <h1> <%= post.title %> </h1>
-  <p><%=post.content%>
-</p>
-<% }) %>
-</div>
-</div>
+
+
+
 
 
 <!-- <h3 class="newsletterInvite">Please sign up for our newsletter!.</h3> -->
