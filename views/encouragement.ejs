@@ -1,0 +1,27 @@
+<%- include("partials/header"); -%>
+
+
+<div class="divTealBackground">
+  <div class="posts">
+
+
+  <h3>Please sign up for our newsletter and consider leaving an encouraging message for our next visitor!</h3>
+<!-- <button type="submit" href="/newsletter" name="button">Newsletter</button>
+<button type="submit" href="/compose" name="button">Pass it on...</button> -->
+  <a class="btn btn-success button" href="/newsletter">Newsletter</a>
+  <a class="btn btn-success button" href="/compose">Pass it on...</a>
+
+
+
+
+  <% posts.forEach(function(post) { %>
+  <hr class="styleHR">
+  <h1> <%= post.title %> </h1>
+  <p><%=post.content%>
+  </p>
+  <% }) %>
+  </div>
+  </div>
+
+
+  <%- include(partials/footer"); -%>

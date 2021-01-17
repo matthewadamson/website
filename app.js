@@ -67,12 +67,17 @@ let subscriber = [];
 
 
 // process.env.API_KEY
-
 app.get("/", function(req, res) {
+  res.render("home", {
+    homeStartingContent: homeStartingContent
+  });
+});
+
+
+app.get("/encouragement", function(req, res) {
 
   Post.find({}, function(err, posts) {
-    res.render("home", {
-      homeStartingContent: homeStartingContent,
+    res.render("encouragement", {
       posts: posts
     });
   });
