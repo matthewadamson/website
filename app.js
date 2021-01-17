@@ -27,7 +27,11 @@ app.use(express.static("public"));
 
 // REVAMP WHEN READY FOR DATABASE
 
-mongoose.connect("mongodb://localhost:27017/newCenturyInnovation", {useNewUrlParser: true, useUnifiedTopology: true});
+// mongoose.connect("mongodb://localhost:27017/newCenturyInnovation", {useNewUrlParser: true, useUnifiedTopology: true});
+// // {useUnifiedTopology: true} necessary to avoid deprecation warning.
+
+
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://27017/safe-shore-75874', {useNewUrlParser: true, useUnifiedTopology: true});
 // {useUnifiedTopology: true} necessary to avoid deprecation warning.
 
 const postSchema = {
