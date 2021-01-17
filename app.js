@@ -31,7 +31,7 @@ app.use(express.static("public"));
 // // {useUnifiedTopology: true} necessary to avoid deprecation warning.
 
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://27017/safe-shore-75874', {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect(process.env.PORT || 'mongodb://27017/safe-shore-75874', {useNewUrlParser: true, useUnifiedTopology: true});
 // {useUnifiedTopology: true} necessary to avoid deprecation warning.
 
 const postSchema = {
