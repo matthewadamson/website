@@ -27,7 +27,7 @@ app.use(express.static("public"));
 
 // REVAMP WHEN READY FOR DATABASE
 
-const uri = 'mongodb+srv://admin-matt:!!89LIncoln@cluster1.qcpvo.mongodb.net/Students?retryWrites=true&w=majority'; TO const uri = process.env.MONGO_DB_URI || 'mongodb+srv://Ulan:123@cluster1.qcpvo.mongodb.net/Students?retryWrites=true&w=majority';
+const uri = process.env.MONGO_DB_URI || 'mongodb+srv://Ulan:123@cluster1.qcpvo.mongodb.net/Students?retryWrites=true&w=majority';
 
 
 
